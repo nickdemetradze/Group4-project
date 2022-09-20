@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:wght@400;500;700;900&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <title>Contact</title>
+  </head>
+  <body class="contact">
+    <nav>
+      <div class="logo"><a href="index.html">green decor</a></div>
+      <ul class="nav-links">
+        <li
+          ><a href="categories.html">Categories</a>
+          <ul class="cat-items">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Indoor</a></li>
+            <li><a href="#">Outdoor</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-designer">
+      <h3 id="form-title">Get your personal designer</h3>
+      <form action="" id="submit-form">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email *"
+          value=""
+        />
+        <p id="invalid-error-email" class="invalid-error">invalid Email</p>
+
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First name *"
+          value=""
+        />
+        <p id="invalid-error-name" class="invalid-error">invalid name</p>
+
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last name *"
+          value=""
+        />
+        <p id="invalid-error-lastName" class="invalid-error">invalid last name</p>
+        <br />
+        <button type="button" id="submit" class="submit" onclick="submitForm()">Submit</button>
+      </form>
+      <div class="submitted" id="submitted">
+        <h3>Request has been sent!</h1>
+        <h2 id="thank-you-note"></h2>
+        <p>Our team will contact you as soon as possible</p>
+      </div>
+    </div>
+    <footer>
+      <h4>Contact us on:</h4>
+      <p>Email: greendecor@gmail.com</p>
+      <p>Phone: 0322000011</p>
+      <p>Mobile: +995555000011</p>
+    </footer>
+  </body>
+</html>
